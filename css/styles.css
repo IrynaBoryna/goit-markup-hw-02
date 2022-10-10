@@ -2,7 +2,8 @@
     --primare-text-color:  #757575; 
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --second-font: Ralewey, sans-serif;
+    --second-font: Raleway, sans-serif;
+    --primare-background-color: #ffffff;
 }
 
 
@@ -12,11 +13,9 @@
 
 body {
     color: var(--primare-text-color);
-    background-color: #f5f5f5;
+    background-color: var(--primare-background-color);
     font-family: Roboto, sans-serif;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
     letter-spacing: .03em;
 
 }
@@ -27,6 +26,8 @@ body {
 /* Studio #000000 */
 /* ховер #F5F4FA */
 /* додатковий фон#F5F4FA */
+/* підсвічення кнопки hero #188ce8 */
+/* фон footer #2f303a */
 
 /* Logo */
 .logo {
@@ -53,22 +54,21 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus  {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+        color: var(--accent-color);
     }
 .mailto-link {
-    color: var(--accent-color);
+    color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: .02em;
     text-decoration: none;
 }
-.mailto-link:hover {
-    color: var(--title-text-color);
+/* .mailto-link:hover {
+    color: var(--accent-text-color);
 }
 .tel-link:hover {
     color: var(--accent-color);
-}
+} */
 
 
 .hero-title {
@@ -97,7 +97,7 @@ body {
     background-color: #188ce8;
 }
  
-/* Приховані заголовки Переваги Портфоліо Проекти */
+/* Прихований заголовок Переваги */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -124,6 +124,9 @@ body {
     font-size: 16px;
     line-height: 1.19;
     }
+.section-team {
+    background-color: #F5F4FA;
+}
 .feature-list .title{
     color: var(--title-text-color);
     font-weight: 700;
@@ -135,20 +138,23 @@ body {
     line-height: 1.71;
  }      
  .team-text {
+    font-size: 16px;
     line-height: 1.19;
+ }
+
+ .footer {
+    background-color: #2f303a;
  }
 
 /* В макеті темний фон, тому зараз не видно */
 .footer-address-link {
     color: #FFFFFF;
-    background-color: rgba(47, 48, 58, 1);
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
 }
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(47, 48, 58, 1);
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
@@ -160,7 +166,9 @@ body {
 .footer-link:focus {
     color: var(--accent-color);
 }
-
+.footer-logo-studio {
+    color: #ffffff;
+}
 
 
 /* Фільтри Портфоліо*/
@@ -183,12 +191,13 @@ body {
 /* Проекти Портфоліо*/
 .project-list .title {
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
 }
 
 .project-text {
+    font-size: 16px;
     line-height: 1.875;
 }
 
